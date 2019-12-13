@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.cellstudio.kaodimhackathon.AspectAwareView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/bottomSheet"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/img_whatyoulookingfor"
+    app:aspect_adjust="height"
+    app:aspect_height="1224"
+    app:aspect_width="1125"
+    android:orientation="vertical"
+    app:behavior_hideable="false"
+    app:behavior_peekHeight="156dp"
+    app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior">
+
+</com.cellstudio.kaodimhackathon.AspectAwareView>

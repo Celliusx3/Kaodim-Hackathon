@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:layout_width="0px"
+        android:layout_height="0px"/>
+    
+    <ScrollView
+        android:id="@+id/svRoot"
+        android:layout_above="@+id/ivGGTest"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.cellstudio.kaodimhackathon.AspectAwareImageView
+                android:id="@+id/ivTest"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:aspect_adjust="height"
+                app:aspect_height="711"
+                app:aspect_width="1125"
+                android:src="@drawable/edgecrawl_hero"/>
+
+            <com.cellstudio.kaodimhackathon.AspectAwareImageView
+                android:layout_below="@+id/ivTest"
+                android:id="@+id/ivTest2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                app:aspect_adjust="height"
+                app:aspect_height="378"
+                app:aspect_width="921"
+                android:layout_marginTop="-56dp"
+                android:src="@drawable/vendor_details"/>
+
+            <com.cellstudio.kaodimhackathon.AspectAwareImageView
+                android:layout_below="@+id/ivTest2"
+                android:id="@+id/ivTest6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="84dp"
+                android:layout_marginEnd="84dp"
+                android:layout_marginBottom="16dp"
+                app:aspect_adjust="height"
+                app:aspect_height="108"
+                app:aspect_width="576"
+                android:src="@drawable/timeslot_available"/>
+
+            <com.cellstudio.kaodimhackathon.AspectAwareImageView
+                android:layout_below="@+id/ivTest6"
+                android:id="@+id/ivTest5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="16dp"
+                app:aspect_adjust="height"
+                app:aspect_height="438"
+                app:aspect_width="996"
+                android:src="@drawable/timeslots"/>
+
+            <TextView
+                android:layout_below="@+id/ivTest5"
+                android:id="@+id/ivTest3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="#000"
+                android:text="More details about request"/>
+
+            <EditText
+                android:id="@+id/ivTest4"
+                android:layout_below="@+id/ivTest3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:gravity="start"
+                android:layout_marginStart="16dp"
+                android:lines="5"
+                android:hint="Type something here..."
+                android:layout_marginEnd="16dp"/>
+
+            <com.cellstudio.kaodimhackathon.AspectAwareImageView
+                android:id="@+id/llBankDetailsAttachmentRoot"
+                android:layout_below="@id/ivTest4"
+                android:layout_margin="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:aspect_adjust="height"
+                app:aspect_height="243"
+                app:aspect_width="1011"
+                android:src="@drawable/attachmentblock"/>
+
+            <com.cellstudio.kaodimhackathon.AspectAwareImageView
+                android:layout_below="@+id/llBankDetailsAttachmentRoot"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:aspect_adjust="height"
+                app:aspect_height="1797"
+                app:aspect_width="1125"
+                android:src="@drawable/reviewssection"/>
+
+        </RelativeLayout>
+        
+    </ScrollView>
+
+    <com.cellstudio.kaodimhackathon.AspectAwareImageView
+        android:id="@+id/ivGGTest"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:aspect_adjust="height"
+        app:aspect_height="366"
+        app:aspect_width="1125"
+        android:src="@drawable/requestthisvendor"/>
+
+</RelativeLayout>
